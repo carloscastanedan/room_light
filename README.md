@@ -19,9 +19,10 @@ Blue -> 15
 
 Si embargo esto se pude configurar en al archivo config.js
 Como se muestra 
-	'use strict'	
+		
 	
-```	
+```
+'use strict'
 	module.exports = {	
 		port: process.env.PORT || 3000,	
 		led: {	
