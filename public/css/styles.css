@@ -1,0 +1,343 @@
+/*  Fonts   */
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/Roboto-Light.ttf');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/Roboto-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/Roboto-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/*  Styles  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+}
+
+body:after {
+    line-height: 100px; /* height of footer */
+    white-space: pre;
+    content: "\A";
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    margin-bottom: 20px;
+    background: linear-gradient(#0066CC, #0066BB);
+    box-shadow: 2px 2px #555;
+    border-radius: 5px;
+}
+
+header p {
+    font-family: Roboto, Helvetica, sans-serif;
+    font-size: 2.1em;
+    color: #DDD;
+    font-weight: bold;
+    letter-spacing: 1.2em;
+    line-height: 100px;
+}
+h3 {
+    font-family: Roboto, Helvetica, sans-serif;
+    font-size: 2em;
+    font-weight: lighter;
+    color: #333;
+    text-align: center;
+    text-shadow: 2px 2px #888;
+}
+.container {
+    width: 96%;
+    margin: 30px auto;
+    border: 2px solid #0066FF;
+    display: -webkit-flex; 
+    display: flex;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+}
+
+.color-picker {
+    width: 40%;
+    margin: 50px 0 50px 18% ;
+    display: block;
+}
+
+#div-color {
+    background-color: rgb(130, 130, 130);   
+    width: 40%;
+    margin: 50px 0 50px 1%;
+    height: 250px;
+    display: block;
+    border: 1px solid #000;
+}
+
+#div-color p{
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    line-height: 125px;
+    text-align: center;
+}
+ #color-value-2 {
+     color: #FFF;
+ }
+
+.slider {
+    width: 96%;
+    margin: 30px auto;
+    padding: 20px;
+    border: 2px solid #0066FF;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    margin: 20px 5%;
+    width: 80%;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+  
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    background: #3071a9;
+    border-radius: 1.3px;
+    border: 0.2px solid #010101;
+}
+ 
+input[type=range]::-webkit-slider-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #000000;
+    height: 36px;
+    width: 16px;
+    border-radius: 3px;
+    background: #ffffff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -14px;
+}
+  
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #367ebd;
+}
+  
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    background: #3071a9;
+    border-radius: 1.3px;
+    border: 0.2px solid #010101;
+}
+  
+input[type=range]::-moz-range-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #000000;
+    height: 36px;
+    width: 16px;
+    border-radius: 3px;
+    background: #ffffff;
+    cursor: pointer;
+}
+  
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    border-width: 16px 0;
+    color: transparent;
+}
+  
+input[type=range]::-ms-fill-lower {
+    background: #2a6495;
+    border: 0.2px solid #010101;
+    border-radius: 2.6px;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+  
+input[type=range]::-ms-fill-upper {
+    background: #3071a9;
+    border: 0.2px solid #010101;
+    border-radius: 2.6px;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+  
+input[type=range]::-ms-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #000000;
+    height: 36px;
+    width: 16px;
+    border-radius: 3px;
+    background: #ffffff;
+    cursor: pointer;
+}
+  
+input[type=range]:focus::-ms-fill-lower {
+    background: #3071a9;
+}
+  
+input[type=range]:focus::-ms-fill-upper {
+    background: #367ebd;
+}
+
+form label {
+    font-family: Roboto, Helvetica, sans-serif;
+    font-size: 1.2em;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.red {
+    color: #FF0000;
+}
+
+.green {
+    color: #33CC33;
+}
+
+.blue {
+    color: #000099;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    background: linear-gradient(#0066CC, #0066BB);
+    box-shadow: 2px 2px #000;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0px;
+    margin-top: -100px; 
+}
+
+footer p {
+    font-family: Roboto, Helvetica, sans-serif;
+    font-size: 0.8em;
+    font-weight: lighter;
+    line-height: 100px;
+    color: #DDD;
+}
+.zoom {
+        
+    transition: ease 0.5;
+    -moz-transition:  ease 0.5;
+    -webkit-transition: ease 0.5;
+    -o-transition: ease 0.5;
+}
+
+.zoom:hover{
+
+    transform : scale(1.6);
+    -moz-transform : scale(1.6);     
+    -webkit-transform : scale(1.6);   
+    -o-transform : scale(1.6);   
+}
+
+/* Responsive  */
+
+@media only screen and (max-width: 800px) {
+
+.container {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+
+#div-color, .color-picker {
+    padding: 0;
+    margin: 50px auto;
+}
+
+.color-picker {
+    width: auto;
+}
+
+#div-color {
+height: 100px;
+}
+
+#div-color p{
+    line-height: 50px;
+}
+
+header p {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1em;
+    text-shadow: none;
+}
+
+form label {
+    font-size: 0.8em;
+}
+
+}
+
+@media only screen and (max-width: 560px) {
+
+header p {
+    font-size: 0.8em;
+}
+
+
+form label {
+    font-size: 0.5em;
+}
+
+#div-color p{
+    font-size: 0.8em;
+}    
+
+}
+
+@media only screen and (max-width: 340px) {
+
+header p {
+    font-size: 0.8em;
+}
+
+form label {
+    font-size: 0.3em;
+}
+
+        
+ }
