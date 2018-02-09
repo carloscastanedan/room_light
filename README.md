@@ -5,8 +5,10 @@ Esta aplicación fue desarrollada con la finalidad de comenzar a probar la adqui
 Como lenguaje de programación se eligió raspberry pi por su desempeño en aplicaciones en tiempo real.
 
 Por lo que para el desarrollo se usaron librerías como:
-	Express
-	Socket-io
+
+Express
+Socket-io
+
 Para la manipulación de lo periféricos de la tarjeta se uso la librería [CylonJs](https://cylonjs.com/)
 
 La tira de led rgb se conecta a los pines: 
