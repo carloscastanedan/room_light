@@ -6,8 +6,8 @@ Como lenguaje de programación se eligió raspberry pi por su desempeño en apli
 
 Por lo que para el desarrollo se usaron librerías como:
 
-Express
-Socket-io
+.-Express
+.-Socket-io
 
 Para la manipulación de lo periféricos de la tarjeta se uso la librería [CylonJs](https://cylonjs.com/)
 
