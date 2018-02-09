@@ -18,6 +18,7 @@ Grren -> 13
 Blue -> 15
 
 Si embargo esto se pude configurar en al archivo config.js
+
 Como se muestra 
 		
 	
